@@ -12,9 +12,10 @@ class Song
     @artist = newArtist
     @genre = newGenre
     
-    if @@genres.includes?(newGenre) == false 
-      @@genres << newGenre
-    end
+
+    @@genres << newGenre      #adds to Array
+    @@artists << newArtist
+
     @@count += 1 
   end
   
@@ -23,6 +24,9 @@ class Song
   end
   
   def genres
+    if @@genres.includes?(newGenre) == false 
+      @@genres << newGenre
+    end
     @@genres
   end
   
