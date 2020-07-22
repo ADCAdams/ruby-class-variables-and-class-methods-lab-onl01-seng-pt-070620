@@ -23,9 +23,6 @@ class Song
   end
   
   def genres
-    if @@genres.includes?(newGenre) == false 
-      @@genres << newGenre
-    end
     @@genres.uniq 
   end
   
