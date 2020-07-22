@@ -2,8 +2,7 @@ class Song
   @@artists = []
   @@genres  = []
   @@count = 0 
-  SONGCOUNT = 0 
-  GENRECOUNT = 0 
+
   
   attr_accessor :name, :artist, :genre 
   
@@ -38,8 +37,8 @@ class Song
     @@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
     
-  def genre_count
-    @@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
+  def artist_count
+    @@artist.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
   
   
