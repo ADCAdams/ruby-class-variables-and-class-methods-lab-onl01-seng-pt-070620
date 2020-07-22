@@ -18,23 +18,23 @@ class Song
     @@count += 1 
   end
   
-  def count 
+  def self.count 
     @@count 
   end
   
-  def genres
+  def self.genres
     @@genres.uniq 
   end
   
-  def artists
+  def self.artists
     @@artists.uniq 
   end
   
-  def genre_count
+  def self.genre_count
     @@genres.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
     
-  def artist_count
+  def self.artist_count
     @@artist.inject(Hash.new(0)) { |total, e| total[e] += 1 ;total}
   end
   
