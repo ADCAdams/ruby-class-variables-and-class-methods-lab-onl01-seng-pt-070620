@@ -1,5 +1,5 @@
 class Song 
-  ARTISTS = []
+  @@artists = []
   @@genres  = []
   @@count = 0 
   SONGCOUNT = 0 
@@ -26,7 +26,8 @@ class Song
     @@genres
   end
   
-  
+  def artists
+    
   
   
 end
