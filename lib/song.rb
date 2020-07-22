@@ -27,10 +27,12 @@ class Song
     if @@genres.includes?(newGenre) == false 
       @@genres << newGenre
     end
-    @@genres
+    @@genres.uniq 
   end
   
   def artists
+    @@artists.uniq 
+  end
     
   
   
